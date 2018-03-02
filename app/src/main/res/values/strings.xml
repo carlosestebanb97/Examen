@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="title">YEP!</string>
+    <string name="subtitle">UEMhandycraft</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/uni" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/uni" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="siguientePantalla1"
+                android:src="@drawable/buffer"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/twitter" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="siguientePantalla2"
+                android:src="@drawable/buffer"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/instagram" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:onClick="siguientePantalla3"
+                android:src="@drawable/buffer"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/youtube" />
+
+            <TextView
+                android:id="@+id/textTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="350dp"
+                android:text="Del 11 al 14 de diciembre, en el Campus de Villaviciosa de Odón, participa en el mercadillo Solidariode libros organizado por la Biblioteca CRAI Dulce Chacón"
+                android:textColor="@color/colorPrimaryText" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:text="The Library"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
